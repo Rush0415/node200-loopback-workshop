@@ -1,9 +1,6 @@
 {
   "initial:before": {
-    "loopback#favicon": {},
-    "morgan": {
-      "params": ["dev", { "buffer": true } ]
-    }
+    "loopback#favicon": {}
   },
   "initial": {
     "compression": {},
@@ -11,7 +8,10 @@
       "params": {
         "origin": true,
         "credentials": true,
-        "maxAge": 86400
+        "maxAge": 86400,
+        "morgan": {
+          "params": ["dev", { "buffer": true } ]
+        }
       }
     },
     "helmet#xssFilter": {},

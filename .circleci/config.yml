@@ -3,7 +3,7 @@ jobs:
   build:
     docker:
       # specify the version you desire here
-      - image: circleci/node:11.13.0
+      - image: circleci/node:11.13.
 
     working_directory: ~/ra-node200-loopback-workshop
 
@@ -33,7 +33,7 @@ jobs:
 
   deploy:
     docker:
-      - image: circleci/node:11.13.0
+      - image: circleci/node:11.13.
     steps:
       - checkout
       - run:
